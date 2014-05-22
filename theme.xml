@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papaya-theme>
+  <name>Dynamic Papaya Theme</name>
+  <version number="1.0" date="2013-02-22" />
+  <author>Papaya Software GmbH</author>
+  <description>This is the default, dynamic theme.</description>
+  <templates directory="responsive" />
+  <dynamic-values>
+    <page name="form" title="Form">
+      <group name="button" title="Button">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#5c5c5c"/>
+        <value name="color" title="Color" field="color" default="#fff"/>
+      </group>
+      <group name="input" title="Input">
+        <value name="bordercolor" title="Border Color" field="color" default="#b9b9b9"/>
+        <value name="color" title="Color" field="color" default="#f00"/>
+        <value name="errorbackgroundcolor" title="Error Background Color" field="color" default="#ffb2b2"/>
+        <value name="errorbordercolor" title="Error Border Color" field="color" default="#f00"/>
+      </group>
+      <group name="label" title="Label">
+        <value name="fontssize" title="Font Size" field="select" default="1em">
+          <field-parameter>1em</field-parameter>
+          <field-parameter>1.25em</field-parameter>
+          <field-parameter>1.5em</field-parameter>
+        </value>
+      </group>
+    </page>
+    <page name="headlines" title="Headlines">
+      <group name="h1" title="Level 1">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="h2" title="Level 2">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="h3" title="Level 3">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="h4" title="Level 4">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="h5" title="Level 5">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="h6" title="Level 6">
+        <value name="color" title="Color" field="color" default="#2f2a2b"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1.5em">
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>1.6em</field-parameter>
+          <field-parameter>1.7em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.2</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+    </page>
+    <page name="navigation" title="Navigation">
+      <group name="breadcrumb" title="Breadcrumb">
+        <value name="color" title="Color" field="color" default="#787878"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="fontssize" title="Font Size" field="select" default="1em">
+          <field-parameter>1em</field-parameter>
+          <field-parameter>1.25em</field-parameter>
+          <field-parameter>1.5em</field-parameter>
+        </value>
+        <value name="fontstyle" title="Font Style" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="fontweight" title="Font Weight" field="select">
+          <field-parameter>normal</field-parameter>
+        </value>
+        <value name="hovercolor" title="Hover Color" field="color" default="#7e9e0f"/>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+      <group name="detail" title="Detail">
+        <value name="hovercolor" title="Color" field="color" default="#2f2a2b"/>
+	<value name="selectedcolor" title="Color" field="color" default="#7e9e0f"/>
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="linkcolor" title="Link Color" field="color" default="#787878"/>
+      </group>
+      <group name="main" title="Main">
+        <value name="fontfamily" title="Font Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="linkcolor" title="Link Color" field="color" default="#787878"/>
+        <value name="linkhovercolor" title="Link Hover Color" field="color" default="#2f2a2b"/>
+
+        <value name="linkselectedcolor" title="Link Selected Color" field="color" default="#7e9e0f"/>
+      </group>
+    </page>
+    <page name="page" title="Page">
+      <group name="font" title="Font">
+        <value name="color" title="Color" field="color" default="#ffffff"/>
+        <value name="family" title="Family" field="select">
+          <field-parameter key="Georgia,&quot;Times New Roman&quot;,Times,serif">serif</field-parameter>
+          <field-parameter key="Helvetica,Arial,sans-serif">sans-serif</field-parameter>
+        </value>
+        <value name="size" title="Font Size" field="select" default="0.75em">
+          <field-parameter>0.75em</field-parameter>
+	  <field-parameter>1em</field-parameter>
+          <field-parameter>1.2em</field-parameter>
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>2em</field-parameter>
+        </value>
+      </group>
+      <group name="roof" title="Roof">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#231e20"/>
+        <value name="bordercolor" title="Border Color" field="color" default="#fff"/>
+        <value name="linkcolor" title="Link Color" field="color" default="#8d8d8d"/>
+      </group>
+      <group name="head" title="Head">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#fff"/>
+        <value name="bordercolor" title="Border Color" field="color" default="#91b515"/>
+        <value name="borderwidth" title="Border Width" field="select" default="4px">
+          <field-parameter>1px</field-parameter>
+          <field-parameter>2px</field-parameter>
+          <field-parameter>3px</field-parameter>
+          <field-parameter>4px</field-parameter>
+          <field-parameter>5px</field-parameter>
+          <field-parameter>6px</field-parameter>
+          <field-parameter>7px</field-parameter>
+          <field-parameter>8px</field-parameter>
+          <field-parameter>9px</field-parameter>
+          <field-parameter>10px</field-parameter>
+          <field-parameter>11px</field-parameter>
+          <field-parameter>12px</field-parameter>
+          <field-parameter>13px</field-parameter>
+          <field-parameter>14px</field-parameter>
+          <field-parameter>15px</field-parameter>
+        </value>
+      </group>
+      <group name="body" title="Body">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#eae9e9"/>
+        <value name="backgroundtile" title="Background Tile" field="select">
+          <field-parameter key="none">none</field-parameter>
+          <field-parameter key="url(img/tile.png)">tile</field-parameter>
+        </value>
+      </group>
+      <group name="footer" title="Footer">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#231e20"/>
+      </group>
+      
+      
+      
+      <group name="hr" title="HR">
+        <value name="color" title="Color" field="color" default="#231e20"/>
+      </group>
+      
+    </page>
+    <page name="table" title="Table">
+      <group name="data" title="Data">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#c9cfc6"/>
+      </group>
+      <group name="header" title="Header">
+        <value name="backgroundcolor" title="Background Color" field="color" default="#c9cfc6"/>
+        <value name="textalign" title="Text Align" field="select" default="left">
+          <field-parameter>left</field-parameter>
+          <field-parameter>center</field-parameter>
+          <field-parameter>right</field-parameter>
+        </value>
+      </group>
+    </page>
+    <page name="text" title="Text">
+      <group name="footer" title="Footer">
+        <value name="color" title="Color" field="color" default="#8d8d8d"/>
+        <value name="headlinecolor" title="Headline Color" field="color" default="#8d8d8d"/>
+        <value name="linkcolor" title="Link Color" field="color" default="#8d8d8d"/>
+	<value name="linkhovercolor" title="Link Hover Color" field="color" default="#bbbbbb"/>
+      </group>
+      <group name="headlinelink" title="Headline Link">
+        <value name="color" title="Color" field="color" default="#231e20"/>
+        <value name="decoration" title="Decoration" field="select" default="none">
+          <field-parameter>none</field-parameter>
+          <field-parameter>underline</field-parameter>
+        </value>
+        <value name="color" title="Hovercolor" field="color" default="#7e9e0f"/>
+      </group>
+      <group name="link" title="Link">
+        <value name="activecolor" title="Active Color" field="color" default="#787878"/>
+        <value name="activedecoration" title="Active Decoration" field="select" default="underline">
+          <field-parameter>none</field-parameter>
+          <field-parameter>underline</field-parameter>
+        </value>
+        <value name="color" title="Color" field="color" default="#787878"/>
+        <value name="decoration" title="Decoration" field="select" default="none">
+          <field-parameter>none</field-parameter>
+          <field-parameter>underline</field-parameter>
+        </value>
+        <value name="focuscolor" title="Focus Color" field="color" default="#7e9e0f"/>
+        <value name="focusdecoration" title="Focus Decoration" field="select" default="underline">
+          <field-parameter>none</field-parameter>
+          <field-parameter>underline</field-parameter>
+        </value>
+        <value name="hovercolor" title="Hover Color" field="color" default="#7e9e0f"/>
+        <value name="hoverdecoration" title="Hover Decoration" field="select" default="underline">
+          <field-parameter>none</field-parameter>
+          <field-parameter>underline</field-parameter>
+        </value>
+      </group>
+      <group name="paragraph" title="Paragraph">
+        <value name="fontsize" title="Font Size" field="select" default="1em">
+          <field-parameter>1em</field-parameter>
+          <field-parameter>1.2em</field-parameter>
+          <field-parameter>1.5em</field-parameter>
+          <field-parameter>2em</field-parameter>
+        </value>
+        <value name="lineheight" title="Line Height" field="select" default="1.5">
+          <field-parameter>1</field-parameter>
+          <field-parameter>1.5</field-parameter>
+          <field-parameter>2</field-parameter>
+        </value>
+      </group>
+    </page>
+  </dynamic-values>
+</papaya-theme>

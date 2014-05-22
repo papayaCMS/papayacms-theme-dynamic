@@ -1,0 +1,8 @@
+{
+  "name": "papaya/theme-dynamic",
+  "type": "papaya-theme",
+  "require": {
+    "papaya/composer-plugins": "*",
+    "papaya/template-responsive": "*"
+  }
+}
