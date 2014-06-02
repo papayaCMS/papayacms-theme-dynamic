@@ -2,7 +2,7 @@
   "name": "papaya/theme-dynamic",
   "type": "papaya-theme",
   "require": {
-    "papaya/composer-plugins": "*",
-    "papaya/template-responsive": "*"
+    "papaya/composer-plugins": "1.*",
+    "papaya/template-responsive": "1.*"
   }
 }
