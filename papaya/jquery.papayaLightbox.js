@@ -82,6 +82,8 @@
     width : 0,
     height : 0,
 
+    originalSize : false,
+
     load : function(item, trigger) {
       this.currentItem = item;
       this.trigger = trigger;
@@ -132,13 +134,23 @@
     onImageLoaded : function() {
       $(this.nodes.image).css(
         {
-          backgroundImage: "url(" + this.currentItem.options.src + ")", visibility: "hidden", display: ""
+          backgroundImage : "url(" + this.currentItem.options.src + ")",
+          backgroundSize : "contain",
+          visibility : "hidden",
+          display : ""
         }
       );
-      $(this.nodes.sizer).width(this.preLoader.width);
-      $([this.nodes.sizer, this.nodes.prevLink, this.nodes.nextLink]).height(this.preLoader.height);
-
+      this.originalSize = {
+        width: this.preLoader.width,
+        height: this.preLoader.height
+      };
+      this.resizeDisplay(this.preLoader.width, this.preLoader.height);
       this.show(this.nodes.image);
+    },
+
+    resizeDisplay : function(width, height) {
+      $(this.nodes.sizer).width(width);
+      $([this.nodes.sizer, this.nodes.prevLink, this.nodes.nextLink]).height(height);
     },
 
     loadIframe : function(item) {
@@ -190,17 +202,25 @@
     },
 
     show : function(contentElement) {
-      var isTopHeader = this.options.headerPosition == 'top';
-      var $element = $(contentElement);
-      var width = $element.outerWidth();
-      var height = $element.outerHeight();
+      var isTopHeader, $element, width, height, middle, top;
+      isTopHeader = this.options.headerPosition == 'top';
+      $element = $(contentElement);
+      if (this.originalSize && this.originalSize.width > $window.width()) {
+        this.resizeDisplay(
+          width = $window.width(),
+          height = $window.width() * this.originalSize.height / this.originalSize.width
+        );
+      } else {
+        width = $element.outerWidth();
+        height = $element.outerHeight();
+      }
       if (isTopHeader) {
         $(this.nodes.header).removeClass('bottom').addClass('top');
       } else {
         $(this.nodes.header).removeClass('top').addClass('bottom');
       }
-      var middle = $window.scrollTop() + ($window.height() / 2);
-      var top = Math.max(0, middle - (height / 2)) + (this.headerOffset / 2);
+      middle = $window.scrollTop() + ($window.height() / 2);
+      top = Math.max(0, middle - (height / 2)) + (this.headerOffset / 2);
       if (
           this.nodes.center.offsetWidth != width ||
           this.nodes.center.offsetHeight != height) {
@@ -331,8 +351,9 @@
     },
 
     center : function(centerWidth, centerHeight) {
-      var middle = $window.scrollTop() + ($window.height() / 2);
-      var top = Math.max(0, middle - (centerHeight / 2)) + this.headerOffset;
+      var middle, top;
+      middle = $window.scrollTop() + ($window.height() / 2);
+      top = Math.max(0, middle - (centerHeight / 2)) + this.headerOffset;
       $(this.nodes.center).css(
         {
           top: top,
