@@ -323,15 +323,14 @@
 
         this.nodes.header = $('<div class="lightboxHeader top" />').appendTo(this.nodes.headerContainer).append(
           [
-            this.nodes.closeLink = $('<a class="lightboxCloseLink" href="#"> </a>')
-              .add(this.nodes.overlay)
-              .on('click', $.proxy(this.onClickClose, this))[0],
+            this.nodes.closeLink = $('<a class="lightboxCloseLink" href="#"> </a>')[0],
             this.nodes.caption = $('<div class="lightboxCaption" />')[0],
             this.nodes.alternateLink = $('<a class="lightboxLinkAlternate" href="#">foobar</a>')[0],
             this.nodes.number = $('<div class="lightboxNumber" />')[0],
             $('<div style="clear: both;" />')[0]
           ]
         )[0];
+        $([this.nodes.closeLink, this.nodes.overlay]).on('click', $.proxy(this.onClickClose, this));
       }
       var width = this.options.width;
       var height = this.options.height;
