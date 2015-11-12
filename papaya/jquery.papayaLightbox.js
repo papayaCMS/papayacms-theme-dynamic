@@ -515,6 +515,7 @@
       if (this.options.title == '' && node.is('[title]')) {
         this.options.title = node.attr('title');
       }
+      this.node.addClass('clickable');
       this.node.on('click', $.proxy(this.onClick, this));
     },
 
