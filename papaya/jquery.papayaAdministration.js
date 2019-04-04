@@ -41,8 +41,8 @@
         .appendTo('body');
       this.nodes.$buttons = $('<div class="buttons"/>')
         .appendTo(this.nodes.$bar);
-      this.nodes.links.$edit = $('<a href="#" class="lsf" title="Edit Page">edit</a>')
-        .attr('href', this.options.url + 'topic.php?tt[page_id]=' + this.data.pageId)
+      this.nodes.links.$edit = $('<a href="#" class="lsf" title="Edit Page" target="_top">edit</a>')
+        .attr('href', this.options.url + 'pages.edit?tt[page_id]=' + this.data.pageId)
         .appendTo(this.nodes.$buttons);
     }
 
